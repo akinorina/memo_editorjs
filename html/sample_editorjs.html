@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>sample of Editor.js</title>
+
+  <style>
+    .frame {
+      width: 800px;
+      min-height: 400px;
+      border: 2px #f0f0f0 solid;
+      padding: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>sample of Editor.js</h1>
+  </header>
+
+  <div class="frame">
+    <div id="editorjs"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/simple-image@latest"></script>
+  <script>
+    const editor = new EditorJS({
+      holder: 'editorjs',
+      tools: {
+        header: Header,
+        list: List,
+        image: SimpleImage,
+      }
+    });
+  </script>
+</body>
+
+</html>
