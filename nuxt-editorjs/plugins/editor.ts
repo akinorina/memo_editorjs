@@ -1,4 +1,4 @@
-import { Editor } from '~~/models'
+import { Editor } from '~/models/editor'
 
 const editor: Editor = {
   create: async ({ id, data, onChange }) => {
